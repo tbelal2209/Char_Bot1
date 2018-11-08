@@ -1,4 +1,4 @@
-package com.company;
+paackage com.company;
 
 import java.util.Random;
 import java.util.Scanner;
@@ -105,9 +105,6 @@ public class ChatBot1
 
         return response;
     }
-
-
-
     /**
      * Take a statement with "I want to <something>." and transform it into
      * "Why do you want to <something>?"
@@ -126,7 +123,7 @@ public class ChatBot1
                     .length() - 1);
         }
         int psn = findKeyword (statement, "Remember", 0);
-        String restOfStatement = statement.substring(psn + 6).trim();
+        String restOfStatement = statement.substring(psn + 8).trim();
         return "What do you like about " + restOfStatement + "?";
     }
 
